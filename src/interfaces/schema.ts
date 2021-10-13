@@ -30,11 +30,11 @@ export interface SchemaField {
   type: Type;
 }
 
-export type SchemaFields = SchemaField[];
+export type Schema = SchemaField[];
 
-export type UserSchema = SchemaFields;
-export type OrganizationSchema = SchemaFields;
-export type TeamSchema = SchemaFields;
+export type UserSchema = Schema;
+export type OrganizationSchema = Schema;
+export type TeamSchema = Schema;
 
 // const user: UserSchema = [
 //   {
@@ -55,4 +55,25 @@ export type TeamSchema = SchemaFields;
 //       },
 //     },
 //   },
+//   {
+//       key: 'age',
+//       type: {
+//           id: 'number'
+//       }
+//   },
+//   {
+//       key: 'colors',
+//       type: {
+//           id: 'array',
+//           values: {
+//               id: 'map',
+//               values: {
+//                   id: 'array',
+//                   values: {
+//                       id: 'string'
+//                   }
+//               }
+//           }
+//       }
+//   }
 // ];
