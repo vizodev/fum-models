@@ -27,6 +27,8 @@ export type MyMap = {
 
 export interface SchemaField {
   key: string;
+  reserved?: boolean;
+  required?: boolean;
   type: Type;
 }
 
